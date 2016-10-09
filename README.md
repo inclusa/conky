@@ -1,0 +1,2 @@
+# conky
+Text in desktop
