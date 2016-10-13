@@ -45,33 +45,38 @@ ${color 0ABFFF}${execpi 60 remind -n /home/alfons/.reminders | sed -e '2d'}
 ${alignc}
 ${voffset -150}
 ${offset -1050}${color 0ABFFF}Editors
-${offset -1050}${color grey}terminal:      Ctrl + Alt + t
-${offset -1050}${color grey}atom:            Ctrl + Alt + a
-${offset -1050}${color grey}leafpad:      Ctrl + Alt + d
+${offset -1050}${color grey}terminal:             Ctrl + Alt + t
+${offset -1050}${color grey}atom:                   Ctrl + Alt + a
+${offset -1050}${color grey}leafpad:              Ctrl + Alt + d
+${offset -1050}${color grey}XMind:                 Alt + F8
+${offset -1050}${color grey}Remarkable:       Insert
+${offset -1050}${color grey}Spirngseed:        ImprPant
+${offset -1050}${color grey}SimpleNote:        PausaInter
+${offset -1050}${color grey}HarooPad:          Alt + Insert
 
 ${offset -1050}${color 0ABFFF}Navegadors
-${offset -1050}${color grey}firefox:         Ctrl + Alt + f
-${offset -1050}${color grey}chromium:  Ctrl + Alt + g
-${offset -1050}${color grey}vivaldi:        Ctrl + Alt + v
+${offset -1050}${color grey}Firefox:               Ctrl + Alt + f
+${offset -1050}${color grey}Chromium:        Ctrl + Alt + g
+${offset -1050}${color grey}Vivaldi:              Ctrl + Alt + v
 
 ${offset -1050}${color 0ABFFF}Productivitat
-${offset -1050}${color grey}task-web:     Ctrl + Alt + w
-${offset -1050}${color grey}XMind: Ctrl + Alt + x
-${offset -1050}${color grey}alarmclock: Ctrl + Alt + k
+${offset -1050}${color grey}Task-web:           Ctrl + Alt + w
+${offset -1050}${color grey}XMind:                 Ctrl + Alt + x
+${offset -1050}${color grey}AlarmClock:        Ctrl + Alt + k
 
 ${offset -1050}${color 0ABFFF}Comunicacions
-${offset -1050}${color grey}telegram: Ctrl + Alt + m
+${offset -1050}${color grey}Telegram:           Ctrl + Alt + m
 
 # XARXA
-${voffset 50}
-${offset 300}${color 0ABFFF}UpTime ${color green}${uptime}
-${offset 300}${color slate grey}Highest CPU ${color green}${cpu cpu0}%
-${offset 300}${color 708090}Processos: ${color green} $processes
+${voffset 0}
+${offset 300}${color grey}UpTime ${color green}${uptime}
+${offset 300}${color grey}Highest CPU ${color green}${cpu cpu0}%
+${offset 300}${color grey}Processos: ${color green} $processes
 
 # NETWORK
 ${voffset 15}${offset 300}${color 0ABFFF}Network 
-${offset 300}${color 708090}Public IP: ${color yellow}${execi 3600 wget -q -O - http://icanhazip.com}
-${offset 300}${color 708090}Private eth1 IP:${color yellow} ${addr eth1}
+${offset 300}${color grey}Public IP: ${color yellow}${execi 3600 wget -q -O - http://icanhazip.com}
+${offset 300}${color grey}Private eth1 IP:${color yellow} ${addr eth1}
 
 # TRAFIC
 ${offset 300}${color 0ABFFF}Trafic ${color green}
@@ -89,19 +94,19 @@ ${voffset -285}
 ${voffset 0}${offset 450}${color 0ABFFF}Top 
 #${offset 450}${color slate grey}Top ${color green}
 ${offset 450}${color #ddaa00} ${top name 1}${top_mem cpu 1}
-${offset 450}${color lightgrey} ${top name 2}${top cpu 2}
-${offset 450}${color 708090} ${top name 3}${top cpu 3}
+${offset 450}${color lightyellow} ${top name 2}${top cpu 2}
+${offset 450}${color grey} ${top name 3}${top cpu 3}
 
 # INFORMATION MACHINE
 ${offset 450}${color 0ABFFF}Machine
 ${offset 450}${color green} ${exec lsb_release -ds}
-${offset 450}${color 708090} ${exec lsb_release -r}
-${offset 450}${color 708090} ${exec lsb_release -c}
-${offset 450}${color 708090} Kernel: $kernel
-${offset 450}${color 708090} Cache: $cached
-${offset 450}${color 708090} Arquitectura: ${exec uname -m > /tmp/architecture.txt}${if_match ${exec grep "x86_64" /tmp/architecture.txt -c}!=0}64 Bits${else}32 Bits${endif}
-${offset 450}${color 708090} Màquina: $machine
-${offset 450}${color 708090} Running process: $running_processes
+${offset 450}${color grey} ${exec lsb_release -r}
+${offset 450}${color grey} ${exec lsb_release -c}
+${offset 450}${color grey} Kernel: $kernel
+${offset 450}${color grey} Cache: $cached
+${offset 450}${color grey} Arquitectura: ${exec uname -m > /tmp/architecture.txt}${if_match ${exec grep "x86_64" /tmp/architecture.txt -c}!=0}64 Bits${else}32 Bits${endif}
+${offset 450}${color grey} Màquina: $machine
+${offset 450}${color grey} Running process: $running_processes
 
 
 
