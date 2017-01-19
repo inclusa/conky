@@ -44,25 +44,31 @@ ${color 0ABFFF}${execpi 60 remind -n /home/alfons/.reminders | sed -e '2d'}
 
 ${alignc}
 ${voffset -150}
+${offset -1050}${color 0ABFFF}Terminal
+${offset -1050}${color grey}Terminator:             Ctrl + Alt + t
+${offset -1050}${color grey}Bitàcora:             Ctrl + Alt + t
+
 ${offset -1050}${color 0ABFFF}Editors
-${offset -1050}${color grey}terminal:             Ctrl + Alt + t
-${offset -1050}${color grey}atom:                   Ctrl + Alt + a
-${offset -1050}${color grey}leafpad:              Ctrl + Alt + d
-${offset -1050}${color grey}XMind:                 Alt + F8
+${offset -1050}${color grey}Atom:                   Ctrl + Alt + a
+${offset -1050}${color grey}Leafpad:              Ctrl + Alt + d
 ${offset -1050}${color grey}Remarkable:       Insert
 ${offset -1050}${color grey}Spirngseed:        ImprPant
 ${offset -1050}${color grey}SimpleNote:        PausaInter
 ${offset -1050}${color grey}HarooPad:          Alt + Insert
 
-${offset -1050}${color 0ABFFF}Navegadors
-${offset -1050}${color grey}Firefox:               Ctrl + Alt + f
-${offset -1050}${color grey}Chromium:        Ctrl + Alt + g
-${offset -1050}${color grey}Vivaldi:              Ctrl + Alt + v
+${offset -1050}${color 0ABFFF}Navegadors 
+${offset -1050}${color grey}Firefox:                Ctrl + Alt + f
+${offset -1050}${color grey}Chromium:         Ctrl + Alt + g
+${offset -1050}${color grey}Vivaldi:               Ctrl + Alt + v
+${offset -1050}${color grey}Midori:                Ctrl + Alt + i
+${offset -1050}${color grey}Palemoon:          Ctrl + Alt + o
 
 ${offset -1050}${color 0ABFFF}Productivitat
+${offset -1050}${color grey}AlarmClock:        Ctrl + Alt + k
 ${offset -1050}${color grey}Task-web:           Ctrl + Alt + w
 ${offset -1050}${color grey}XMind:                 Ctrl + Alt + x
-${offset -1050}${color grey}AlarmClock:        Ctrl + Alt + k
+${offset -1050}${color grey}RTM:                    Ctrl + Alt + r
+${offset -1050}${color grey}Flux                     Ctrl + Alt + l
 
 ${offset -1050}${color 0ABFFF}Comunicacions
 ${offset -1050}${color grey}Telegram:           Ctrl + Alt + m
@@ -107,6 +113,5 @@ ${offset 450}${color grey} Cache: $cached
 ${offset 450}${color grey} Arquitectura: ${exec uname -m > /tmp/architecture.txt}${if_match ${exec grep "x86_64" /tmp/architecture.txt -c}!=0}64 Bits${else}32 Bits${endif}
 ${offset 450}${color grey} Màquina: $machine
 ${offset 450}${color grey} Running process: $running_processes
-
 
 
