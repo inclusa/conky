@@ -34,7 +34,7 @@ ${voffset 50}${offset 575}${color #063346}${font GE Inspira:pixelsize=120}${time
 ${voffset 0}${offset 585}${font Ubuntu:pixelsize=10}${offset 0}${color FFA300}HD ${offset 5}$color${fs_free /} / ${fs_size /}${offset 15}${color FFA300}HOME ${offset 5}$color${fs_free /home} / ${offset}$color${fs_size /home}${offset 15}${color FFA300} RAM ${offset 5}$color$mem / $memmax ${offset 15}${color FFA300}CPU ${offset 5}$color${cpu cpu0}%  
 
 # TOP
-${voffset -550}${offset 950}${color 0ABFFF}Top 
+${voffset -650}${offset 950}${color 0ABFFF}Top 
 #${offset 950}${color slate grey}Top ${color green}
 ${offset 950}${color #ddaa00} ${top name 1}${top_mem cpu 1}
 ${offset 950}${color lightyellow} ${top name 2}${top cpu 2}
