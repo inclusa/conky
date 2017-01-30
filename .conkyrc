@@ -78,30 +78,30 @@ ${offset 950}${color grey}Equip: $nodename
 ${alignc}
 ${voffset -400}
 ${offset 700}${color 0ABFFF}Terminal
-${offset 700}${color grey}Terminator:             Ctrl + Alt + t
-${offset 700}${color grey}Bitàcora:             Ctrl + Alt + t
+${offset 700}${color grey}Terminator:      Ctrl + Alt + t
+${offset 700}${color grey}Bitàcora:              Ctrl + Alt + t
 
 ${offset 700}${color 0ABFFF}Editors
-${offset 700}${color grey}Atom:                   Ctrl + Alt + a
-${offset 700}${color grey}Leafpad:              Ctrl + Alt + d
-${offset 700}${color grey}Remarkable:       Insert
-${offset 700}${color grey}Spirngseed:        ImprPant
-${offset 700}${color grey}SimpleNote:        PausaInter
-${offset 700}${color grey}HarooPad:          Alt + Insert
+${offset 700}${color grey}SimpleNote:      PausaInter
+${offset 700}${color grey}Remarkable:      Insert
+${offset 700}${color grey}Springseed:        ImprPant
+${offset 700}${color grey}HarooPad:           Alt + Insert
+${offset 700}${color grey}Leafpad:               Ctrl + Alt + d
+${offset 700}${color grey}Atom:                     Ctrl + Alt + a
 
 ${offset 700}${color 0ABFFF}Navegadors 
-${offset 700}${color grey}Firefox:                Ctrl + Alt + f
 ${offset 700}${color grey}Chromium:         Ctrl + Alt + g
-${offset 700}${color grey}Vivaldi:               Ctrl + Alt + v
-${offset 700}${color grey}Midori:                Ctrl + Alt + i
 ${offset 700}${color grey}Palemoon:          Ctrl + Alt + o
+${offset 700}${color grey}Firefox:                 Ctrl + Alt + f
+${offset 700}${color grey}Vivaldi:                  Ctrl + Alt + v
+${offset 700}${color grey}Midori:                  Ctrl + Alt + i
 
 ${offset 700}${color 0ABFFF}Productivitat
-${offset 700}${color grey}AlarmClock:        Ctrl + Alt + k
-${offset 700}${color grey}Task-web:           Ctrl + Alt + w
-${offset 700}${color grey}XMind:                 Ctrl + Alt + x
-${offset 700}${color grey}RTM:                    Ctrl + Alt + r
-${offset 700}${color grey}Flux                     Ctrl + Alt + l
+${offset 700}${color grey}AlarmClock:       Ctrl + Alt + k
+${offset 700}${color grey}Task-web:            Ctrl + Alt + w
+${offset 700}${color grey}XMind:                  Ctrl + Alt + x
+${offset 700}${color grey}RTM:                       Ctrl + Alt + r
+${offset 700}${color grey}Flux                         Ctrl + Alt + l
 
 ${offset 700}${color 0ABFFF}Comunicacions
 ${offset 700}${color grey}Telegram:           Ctrl + Alt + m
