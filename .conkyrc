@@ -79,19 +79,21 @@ ${alignc}
 ${voffset -400}
 ${offset 700}${color 0ABFFF}Terminal
 ${offset 700}${color grey}Terminator:      Ctrl + Alt + t
-${offset 700}${color grey}Bitàcora:              Ctrl + Alt + t
+${offset 700}${color grey}Bitàcora:              Ctrl + Alt + b
 
 ${offset 700}${color 0ABFFF}Editors
 ${offset 700}${color grey}SimpleNote:      PausaInter
 ${offset 700}${color grey}Remarkable:      Insert
 ${offset 700}${color grey}Springseed:        ImprPant
 ${offset 700}${color grey}HarooPad:           Alt + Insert
+${offset 700}${color grey}PyRoom:              Ctrl + Alt + o
 ${offset 700}${color grey}Leafpad:               Ctrl + Alt + d
+${offset 700}${color grey}uTexts:                  Ctrl + Alt + y
+${offset 700}${color grey}Emacs:                   Ctrl + Alt + e
 ${offset 700}${color grey}Atom:                     Ctrl + Alt + a
 
 ${offset 700}${color 0ABFFF}Navegadors 
-${offset 700}${color grey}Chromium:         Ctrl + Alt + g
-${offset 700}${color grey}Palemoon:          Ctrl + Alt + o
+${offset 700}${color grey}Chromium:         Ctrl + Alt + h
 ${offset 700}${color grey}Firefox:                 Ctrl + Alt + f
 ${offset 700}${color grey}Vivaldi:                  Ctrl + Alt + v
 ${offset 700}${color grey}Midori:                  Ctrl + Alt + i
@@ -106,7 +108,11 @@ ${offset 700}${color grey}Flux                         Ctrl + Alt + l
 ${offset 700}${color 0ABFFF}Comunicacions
 ${offset 700}${color grey}Telegram:           Ctrl + Alt + m
 
+${offset 700}${color 0ABFFF} Gràfics
+${offset 700}${color grey}Silentcast:           Ctrl + Alt + u
 
+${offset 700}${color 0ABFFF} Cerca
+${offset 700}${color grey}Synapse:               Ctrl + Alt + s
 
 # TASK WARRIOR
 ${voffset 50}
