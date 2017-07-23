@@ -30,7 +30,7 @@ text_buffer_size 830
 
 
 TEXT
-${voffset 50}${offset 575}${color #063346}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 0}${color #063346}${font GE Inspira:pixelsize=42} ${time %S} ${voffset -15}${offset 0}${color #235864}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -165}${time %A}${font}
+${voffset 50}${offset 575}${color #0ABFFF}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 0}${color #0ABFFF}${font GE Inspira:pixelsize=42} ${time %S} ${voffset -15}${offset 0}${color grey}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${color green}${font GE Inspira:pixelsize=58}${offset -165}${time %A}${font}
 ${voffset 0}${offset 585}${font Ubuntu:pixelsize=10}${offset 0}${color FFA300}HD ${offset 5}$color${fs_free /} / ${fs_size /}${offset 15}${color FFA300}HOME ${offset 5}$color${fs_free /home} / ${offset}$color${fs_size /home}${offset 15}${color FFA300} RAM ${offset 5}$color$mem / $memmax ${offset 15}${color FFA300}CPU ${offset 5}$color${cpu cpu0}%  
 
 # TOP
@@ -42,11 +42,11 @@ ${offset 950}${color grey} ${top name 3}${top cpu 3}
 
 # INFORMATION MACHINE
 ${offset 950}${color 0ABFFF}Machine
-${offset 950}${color green} ${exec lsb_release -ds}
+${offset 950}${color orange} ${exec lsb_release -ds}
 ${offset 950}${color grey} ${exec lsb_release -r}
 ${offset 950}${color grey} ${exec lsb_release -c}
-${offset 950}${color grey} Kernel: $kernel
-${offset 950}${color grey} Cache: $cached
+${offset 950}${color orange} Kernel: $kernel
+${offset 950}${color orange} Cache: $cached
 ${offset 950}${color grey} Arquitectura: ${exec uname -m > /tmp/architecture.txt}${if_match ${exec grep "x86_64" /tmp/architecture.txt -c}!=0}64 Bits${else}32 Bits${endif}
 ${offset 950}${color grey} Màquina: $machine
 ${offset 950}${color grey} Running process: $running_processes
@@ -82,21 +82,22 @@ ${offset 700}${color grey}Terminator:      Ctrl + Alt + t
 ${offset 700}${color grey}Bitàcora:              Ctrl + Alt + b
 
 ${offset 700}${color 0ABFFF}Editors
-${offset 700}${color grey}SimpleNote:      PausaInter
-${offset 700}${color grey}Remarkable:      Insert
-${offset 700}${color grey}Springseed:        ImprPant
-${offset 700}${color grey}HarooPad:           Alt + Insert
-${offset 700}${color grey}PyRoom:              Ctrl + Alt + o
-${offset 700}${color grey}Leafpad:               Ctrl + Alt + d
-${offset 700}${color grey}uTexts:                  Ctrl + Alt + y
-${offset 700}${color grey}Emacs:                   Ctrl + Alt + e
-${offset 700}${color grey}Atom:                     Ctrl + Alt + a
+${offset 700}${color white}SimpleNote:      PausaInter
+${offset 700}${color white}Remarkable:      Insert
+${offset 700}${color white}Springseed:        ImprPant
+${offset 700}${color white}HarooPad:           Alt + Insert
+${offset 700}${color white}PyRoom:              Ctrl + Alt + o
+${offset 700}${color white}Leafpad:               Ctrl + Alt + d
+${offset 700}${color white}uTexts:                  Ctrl + Alt + y
+${offset 700}${color green}Emacs:                   Ctrl + Alt + e
+${offset 700}${color white}Atom:                     Ctrl + Alt + a
 
 ${offset 700}${color 0ABFFF}Navegadors 
 ${offset 700}${color grey}Chromium:         Ctrl + Alt + h
 ${offset 700}${color grey}Firefox:                 Ctrl + Alt + f
 ${offset 700}${color grey}Vivaldi:                  Ctrl + Alt + v
 ${offset 700}${color grey}Midori:                  Ctrl + Alt + i
+${offset 700}${color grey}Uzbl:                       Ctrl + Alt + z
 
 ${offset 700}${color 0ABFFF}Productivitat
 ${offset 700}${color grey}AlarmClock:       Ctrl + Alt + k
@@ -110,13 +111,15 @@ ${offset 700}${color grey}Telegram:           Ctrl + Alt + m
 
 ${offset 700}${color 0ABFFF} Gràfics
 ${offset 700}${color grey}Silentcast:           Ctrl + Alt + u
+${offset 700}${color grey}Shutter:                Ctrl + Alt + p
 
 ${offset 700}${color 0ABFFF} Cerca
 ${offset 700}${color grey}Synapse:               Ctrl + Alt + s
 
 # TASK WARRIOR
-${voffset 50}
-${color grey}${font GE Inspira:pixelsize=14}${execpi 30 task list}
+${voffset -50}
+#${color grey}${font GE Inspira:pixelsize=14}${execpi 30 task list}
+${color grey}${font GE Inspira:pixelsize=14}${execpi 30 task due.week}
 
 # REMINDS
 #${color 0ABFFF}${execpi 60 remind -n /home/alfons/.reminders | sed -e '2d'}
